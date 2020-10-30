@@ -5,10 +5,12 @@ import './App.css';
 import AboutPage from "./pages/AboutPage";
 import ArticlesList from "./pages/ArticlesList";
 import ArticlePage from "./pages/ArticlePage";
+import Navbar from "./components/Navbar";
 
 function App() {
     return (
         <Router>
+            <Navbar />
             <div className="App">
                 <Route path="/" exact component={HomePage}/>
                 <Route path="/about" component={AboutPage}/>
